@@ -1,0 +1,162 @@
+body{
+    background: black;
+    overflow: hidden;
+}
+
+
+
+.scaled {
+    transform: scale(0.5);  
+  }
+
+.nube:after{
+    width:  100px; height: 100px;
+    top: -50px; left: 50px;
+    border-radius: 100px;
+
+}
+ .nube:before{
+     width: 200px; height: 200px;
+     top: -90px; right: 50px;
+     border-radius: 200px;
+ }
+.nube:after, .nube:before {
+    content: '';
+    position: absolute;
+    background: #FFF;
+    z-index: -1;
+}
+.nube {
+    width: 350px; height: 120px;
+    background: #BFF;
+    background: linear-gradient(top, #BFF 5%, #BFF 100%);
+    background: -webkit-linear-gradient(top, #fff 1%, #BFF 100%);
+    background: -moz-linear-gradient(top,#BFF 5%, #DFF 100%);
+    background: -0-linear-gradient(top, #BFF,5%, #BFF 100%);
+
+    top: 50px; left: 50px;
+    border-radius: 100px;
+    position: absolute;
+    margin: 0px auto 20px;
+}
+
+@keyframes movimiento1 {
+    from   {
+        margin-left: -30%;
+    }
+    to {
+        margin-left: 100%;
+    }
+}
+
+@keyframes movimiento2 {
+    from   {
+        margin-left: -60%;
+    }
+    to {
+        margin-left: 100%;
+    }
+}
+
+
+
+.nube:nth-child(2){
+    background: #BFF;
+    background: linear-gradient(top, #BFF 5%, #BFF 100%);
+    background: -webkit-linear-gradient(top, #fff 1%, #BFF 100%);
+    background: -moz-linear-gradient(top,#BFF 5%, #DFF 100%);
+    background: -0-linear-gradient(top, #BFF,5%, #BFF 100%);
+    animation: movimiento1 45s infinite;
+    
+}
+
+.nube:nth-child(3){
+    margin-top: 100px;
+    background: #BFF;
+    background: linear-gradient(top, #BFF 5%, #BFF 100%);
+    background: -webkit-linear-gradient(top, #fff 1%, #BFF 100%);
+    background: -moz-linear-gradient(top,#BFF 5%, #DFF 100%);
+    background: -0-linear-gradient(top, #BFF,5%, #BFF 100%);
+    animation: movimiento1 70s infinite;
+    
+}
+
+.nube:nth-child(4){
+    margin-top: 220px;
+    background: #BFF;
+    background: linear-gradient(top, #BFF 5%, #BFF 100%);
+    background: -webkit-linear-gradient(top, #fff 1%, #BFF 100%);
+    background: -moz-linear-gradient(top,#BFF 5%, #DFF 100%);
+    background: -0-linear-gradient(top, #BFF,5%, #BFF 100%);
+    animation: movimiento1 55s infinite;
+    
+}
+
+
+.nube:nth-child(5){
+    margin-top: 300px;
+    background: #BFF;
+    background: linear-gradient(top, #BFF 5%, #BFF 100%);
+    background: -webkit-linear-gradient(top, #fff 1%, #BFF 100%);
+    background: -moz-linear-gradient(top,#BFF 5%, #DFF 100%);
+    background: -0-linear-gradient(top, #BFF,5%, #BFF 100%);
+    animation: movimiento1 40s infinite;
+    }
+
+
+    .nube:nth-child(6){
+        background: #BFF;
+        background: linear-gradient(top, #BFF 5%, #BFF 100%);
+        background: -webkit-linear-gradient(top, #fff 1%, #BFF 100%);
+        background: -moz-linear-gradient(top,#BFF 5%, #DFF 100%);
+        background: -0-linear-gradient(top, #BFF,5%, #BFF 100%);
+        animation: movimiento2 55s infinite;
+        
+    }
+    
+    .nube:nth-child(7){
+        margin-top: 100px;
+        background: #BFF;
+        background: linear-gradient(top, #BFF 5%, #BFF 100%);
+        background: -webkit-linear-gradient(top, #fff 1%, #BFF 100%);
+        background: -moz-linear-gradient(top,#BFF 5%, #DFF 100%);
+        background: -0-linear-gradient(top, #BFF,5%, #BFF 100%);
+        animation: movimiento2 80s infinite;
+        
+    }
+    
+    .nube:nth-child(8){
+        margin-top: 220px;
+        background: #BFF;
+        background: linear-gradient(top, #BFF 5%, #BFF 100%);
+        background: -webkit-linear-gradient(top, #fff 1%, #BFF 100%);
+        background: -moz-linear-gradient(top,#BFF 5%, #DFF 100%);
+        background: -0-linear-gradient(top, #BFF,5%, #BFF 100%);
+        animation: movimiento2 65s infinite;
+        
+    }
+    
+    
+    .nube:nth-child(9){
+        margin-top: 300px;
+        background: #BFF;
+        background: linear-gradient(top, #BFF 5%, #BFF 100%);
+        background: -webkit-linear-gradient(top, #fff 1%, #BFF 100%);
+        background: -moz-linear-gradient(top,#BFF 5%, #DFF 100%);
+        background: -0-linear-gradient(top, #BFF,5%, #BFF 100%);
+        animation: movimiento2 60s infinite;
+    
+}
+
+
+#back {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(185deg, rgba(2,0,36,1) 0%, rgba(121,9,109,1) 0%, rgba(0,212,255,1) 65%);
+ 
+  }
